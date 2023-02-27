@@ -1,7 +1,7 @@
 .main-picture {
   position: relative;
   top: 80px;
-  background-image: url('/img/main-photo/bgphoto.png');
+  background-image: url('../img/main-photo/bgphoto.png');
 
   /* Full height */
   height: calc(100vh - 80px);
