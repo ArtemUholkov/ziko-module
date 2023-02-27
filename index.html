@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/header/logo-cut.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&family=Orbitron:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Зіко - Лідер Інженерії Води</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/d28b76815c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_wrapper mycontainer">
+        <nav class="navbar">
+          <a href="index.html" class="logo_wrapper">
+            <img src="img/header/logo.png" alt="logo" class="main-logo" />
+          </a>
+
+          <ul class="navbar_menu">
+            <li><p class="nav_elem" href="" onclick="scrollToBrands()">Головна</p></li>
+            <li><p class="nav_elem" href="#" onclick="scrollToAdvantages()">Переваги</p></li>
+            <li><p class="nav_elem" href="#" onclick="scrollToTestimonials()">Типорозміри</p></li>
+            <li><p class="nav_elem" href="#" onclick="scrollToContacts()">Застосування</p></li>
+          </ul>
+          <div class="header_button_pair">
+            <a href="tel:+380504315021" class="main_button">+380504315021</a>
+            <button
+              class="main_button fill_button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Залишити заявку
+            </button>
+          </div>
+          <div class="burger">
+            <div class="burger_space" id="burger">
+              <span class="stick"></span>
+              <span class="stick"></span>
+              <span class="stick"></span>
+            </div>
+          </div>
+        </nav>
+        <div class="popup" id="popup">
+          <div class="popup_textblock" id="popupSlide">
+            <ul class="navbar_menu_mobile">
+              <li><p class="nav_elem_mobile" href="" onclick="scrollToBrands()">Головна</p></li>
+              <li>
+                <p class="nav_elem_mobile" href="" onclick="scrollToAdvantages()">Переваги</p>
+              </li>
+              <li>
+                <p class="nav_elem_mobile" href="" onclick="scrollToTestimonials()">Типорозміри</p>
+              </li>
+              <li>
+                <p class="nav_elem_mobile" href="" onclick="scrollToContacts()">Застосування</p>
+              </li>
+
+              <div class="header_button_pair mob_menu_buttons">
+                <a
+                  href="tel:+380504315021"
+                  class="main_button mob_menu_button button_background_change"
+                >
+                  <span class="phone_wrappee">+380504315021</span>
+                </a>
+                <button
+                  class="main_button fill_button mob_menu_button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Залишити заявку
+                </button>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="main-picture">
+      <div class="mycontainer main-picture_container">
+        <h1>Модульні ємності</h1>
+        <div class="main-picture_content_wrapper">
+          <div class="photo-collage">
+            <div class="main-photo-text">
+              <div class="icon_text_wrap">
+                <i class="fa-solid fa-maximize"></i>
+                <span class="sub_title">Будь-який розмір</span>
+              </div>
+              <div class="icon_text_wrap">
+                <span class="sub_title">Призначені саме для Вас</span>
+              </div>
+              <div class="icon_text_wrap">
+                <span class="sub_title">Підземні</span>
+              </div>
+              <div class="icon_text_wrap">
+                <span class="sub_title">Наземні</span>
+              </div>
+            </div>
+            <img src="img/main-photo/colage.png" alt="colage" class="main-photo_colage" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advantages"></section>
+    <section class="sizes"></section>
+    <section class="spheres"></section>
+    <section class="examples"></section>
+    <section class="process"></section>
+    <section class="our_clients"></section>
+    <div class="modal_window">
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+              <div class="mb-3">
+                <label for="subject" class="form-label">Name *</label>
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Name"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="extra_email_adress" class="form-label">Email address *</label>
+                <input
+                  name="extra_email_adress"
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="extra_phone_number" class="form-label">Phone number *</label>
+                <input
+                  type="text"
+                  name="extra_phone_number"
+                  class="form-control"
+                  placeholder="Phone Number"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message *</label>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  name="text"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+
+              <input type="hidden" name="access_token" value="7ad5wwckhiektsvpntrfradi" />
+
+              <input
+                type="hidden"
+                name="success_url"
+                value=".?message=Email+Successfully+Sent%21&isError=0"
+              />
+              <input
+                type="hidden"
+                name="error_url"
+                value=".?message=Email+could+not+be+sent.&isError=1"
+              />
+
+              <input id="submit_form" type="submit" value="Send" class="form_button" />
+            </form>
+
+            <script>
+              var submitButton = document.getElementById('submit_form');
+              var form = document.getElementById('email_form');
+              form.addEventListener('submit', function (e) {
+                setTimeout(function () {
+                  submitButton.value = 'Sending...';
+                  submitButton.disabled = true;
+                }, 1);
+                setTimeout(() => {
+                  window.location.href = 'thankyou.html';
+                }, 1000);
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <footer>
+      <div class="mycontainer footer_container">
+        <div class="logo_copy">
+          <img src="img/header/main-logo.png" alt="footer logo" class="footer_logo" />
+          <p class="footer_copyright">© 50 Partners, 2023</p>
+        </div>
+        <button class="footer_button main_button">Become our partner</button>
+      </div>
+    </footer> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
