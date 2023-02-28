@@ -88,13 +88,41 @@
       </div>
     </header>
     <section class="main-picture">
-      <div class="mycontainer main-picture_container">
+      <!-- <div class="mycontainer main-picture_container">
         <h1>Модульні ємності</h1>
         <div class="main-picture_content_wrapper">
           <div class="text_buttons">
             <span class="sub_title">Підземні</span>
             <span class="sub_title">Наземні</span>
           </div>
+
+          <img src="img/main-photo/colage.png" alt="colage" class="main-photo_colage" />
+        </div>
+      </div> -->
+      <h1>Модульні ємності</h1>
+      <div class="main-picture_content_wrapper">
+        <div class="main-picture_text_wrapper">
+          <!-- <span class="main-picture_advantages_title">Переваги</span> -->
+          <div class="main_picture_pair_advantage">
+            <span class="sub_title">Підземні</span>
+            <span class="sub_title">Наземні</span>
+          </div>
+          <span class="main-picture_advantage">Широкий вибір розмірів</span>
+          <span class="main-picture_advantage">Великий спектр призначення</span>
+          <div class="header_button_pair main-photo_pair">
+            <a href="tel:+380504315021" class="main_button main-photo_button white_button"
+              >+380504315021</a
+            >
+            <button
+              class="main_button fill_button main-photo_button gold_button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Залишити заявку
+            </button>
+          </div>
+        </div>
+        <div class="main-picture_colage_wrapper">
           <img src="img/main-photo/colage.png" alt="colage" class="main-photo_colage" />
         </div>
       </div>
@@ -118,17 +146,17 @@
           <div class="modal-content">
             <form action="https://postmail.invotes.com/send" method="post" id="email_form">
               <div class="mb-3">
-                <label for="subject" class="form-label">Name *</label>
+                <label for="subject" class="form-label">Ім'я *</label>
                 <input
                   type="text"
                   name="subject"
-                  placeholder="Name"
+                  placeholder="Ім'я"
                   class="form-control"
                   required
                 />
               </div>
               <div class="mb-3">
-                <label for="extra_email_adress" class="form-label">Email address *</label>
+                <label for="extra_email_adress" class="form-label">Пошта *</label>
                 <input
                   name="extra_email_adress"
                   type="email"
@@ -139,23 +167,23 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="extra_phone_number" class="form-label">Phone number *</label>
+                <label for="extra_phone_number" class="form-label">Номер телефону *</label>
                 <input
                   type="text"
                   name="extra_phone_number"
                   class="form-control"
-                  placeholder="Phone Number"
+                  placeholder="Ваш номер"
                   required
                 />
               </div>
               <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Message *</label>
+                <label for="exampleFormControlTextarea1" class="form-label">Повідомлення *</label>
                 <textarea
                   class="form-control"
                   id="exampleFormControlTextarea1"
                   rows="3"
                   name="text"
-                  placeholder="Message"
+                  placeholder="Повідомлення"
                   required
                 ></textarea>
               </div>

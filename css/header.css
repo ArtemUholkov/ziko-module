@@ -81,7 +81,7 @@ header {
   width: 0;
   height: 1.5px;
   display: block;
-  background-color: #49910054;
+  background-color: var(--usual-decorations);
   transition: 0.5s;
   margin-top: 10px;
 }
