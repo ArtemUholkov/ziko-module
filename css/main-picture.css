@@ -118,9 +118,11 @@
   border: 0;
   color: black;
   border: 1px white solid;
+  max-width: 300px;
 }
 .white_button {
   background-color: transparent;
+  max-width: 300px;
 }
 .main-photo_pair {
   margin-top: 20px;
