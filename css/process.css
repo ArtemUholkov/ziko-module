@@ -1,0 +1,25 @@
+.process {
+  width: 100%;
+  background-color: var(--main-bg-color);
+}
+.process_content_wrapper {
+  padding: 100px 0px;
+}
+.swiper {
+}
+.mySwiper2 {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-lazy-preloader {
+}
+.swiper-lazy-preloader-white {
+}
+.swiper-button-next {
+}
+.swiper-button-prev {
+}
+.swiper-pagination {
+}

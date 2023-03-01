@@ -279,7 +279,54 @@
     </section>
     <section class="examples"></section>
     <section class="process">
-      <div class="process_content_wrapper"></div>
+      <div class="process_content_wrapper">
+        <div
+          style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+          class="swiper mySwiper2"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-1.jpg" loading="lazy" />
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-2.jpg" loading="lazy" />
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-3.jpg" loading="lazy" />
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-4.jpg" loading="lazy" />
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-5.jpg" loading="lazy" />
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-6.jpg" loading="lazy" />
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-7.jpg" loading="lazy" />
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-8.jpg" loading="lazy" />
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-9.jpg" loading="lazy" />
+              <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
     </section>
 
     <section class="our_clients">
@@ -587,6 +634,22 @@
             slidesPerView: 5,
             spaceBetween: 30,
           },
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper('.mySwiper2', {
+        slidesPerView: 5,
+        spaceBetween: 10,
+        lazy: true,
+
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
       });
     </script>
