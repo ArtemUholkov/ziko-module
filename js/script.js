@@ -70,3 +70,17 @@ function copyText(elem) {
     }
   }
 }
+const upper = document.querySelector('.upper_image');
+const under = document.querySelector('.under_image');
+
+function changeImgUpper() {
+  upper.classList.remove('show_img');
+  under.classList.remove('show_img');
+  upper.classList.add('show_img');
+}
+function changeImgUnder() {
+  under.classList.remove('show_img');
+  upper.classList.remove('show_img');
+
+  under.classList.add('show_img');
+}

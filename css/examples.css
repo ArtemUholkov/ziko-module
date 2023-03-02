@@ -1,0 +1,12 @@
+.examples {
+  width: 100%;
+  background-color: var(--main-bg-color);
+}
+.mySwiper3 {
+}
+.examples_image {
+  object-fit: cover;
+  object-position: center center;
+}
+.examples_slide {
+}
