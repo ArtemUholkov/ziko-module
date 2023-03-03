@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/header/logo-cut.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&family=Orbitron:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&family=Exo+2:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Зіко - Лідер Інженерії Води</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/d28b76815c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/thankyou.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_wrapper mycontainer">
+        <nav class="navbar">
+          <a href="index.html" class="logo_wrapper">
+            <img src="img/header/logo.png" alt="logo" class="main-logo" />
+          </a>
+
+          <ul class="navbar_menu">
+            <li><a class="nav_elem" href="index.html">Головна</a></li>
+            <li><a class="nav_elem" href="index.html#adv">Переваги</a></li>
+            <li>
+              <a class="nav_elem" href="index.html#sizes">Типорозміри</a>
+            </li>
+            <li><a class="nav_elem" href="index.html#usage">Застосування</a></li>
+          </ul>
+          <div class="header_button_pair">
+            <a href="tel:+380504315021" class="main_button">+380504315021</a>
+          </div>
+          <div class="burger">
+            <div class="burger_space" id="burger">
+              <span class="stick"></span>
+              <span class="stick"></span>
+              <span class="stick"></span>
+            </div>
+          </div>
+        </nav>
+        <div class="popup" id="popup">
+          <div class="popup_textblock" id="popupSlide">
+            <ul class="navbar_menu_mobile">
+              <li>
+                <a class="nav_elem_mobile" href="index.html">Головна</a>
+              </li>
+              <li>
+                <a class="nav_elem_mobile" href="index.html#adv">Переваги</a>
+              </li>
+              <li>
+                <a class="nav_elem_mobile" href="index.html#sizes">Типорозміри</a>
+              </li>
+              <li>
+                <a class="nav_elem_mobile" href="index.html#usage">Застосування</a>
+              </li>
+
+              <div class="header_button_pair mob_menu_buttons">
+                <a
+                  href="tel:+380504315021"
+                  class="main_button mob_menu_button button_background_change"
+                >
+                  <span class="phone_wrappee">+380504315021</span>
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="thankyou_main_section">
+      <span class="thankyou_info">Дякуємо! Очікуйте на дзвінок найближчим часом!</span>
+      <a href="index.html" class="link_back">Повернутись на головну</a>
+    </section>
+    <footer>
+      <div class="mycontainer footer_container">
+        <div class="logo_copy">
+          <img src="img/header/logo.png" alt="footer logo" class="footer_logo" />
+          <p class="footer_copyright">© Компанія ЗІКО, 2023</p>
+        </div>
+        <div class="header_button_pair main-photo_pair">
+          <a href="tel:+380504315021" class="main_button main-photo_button white_button"
+            >+380504315021</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 5,
+        loop: true,
+        spaceBetween: 10,
+
+        autoplay: {
+          delay: 2000,
+        },
+        breakpoints: {
+          100: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1250: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper('.mySwiper2', {
+        slidesPerView: 5.5,
+        spaceBetween: 10,
+        lazy: true,
+
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          100: {
+            slidesPerView: 1.5,
+            spaceBetween: 30,
+          },
+          640: {
+            slidesPerView: 2.5,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3.5,
+            spaceBetween: 30,
+          },
+          1250: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper('.mySwiper3', {
+        slidesPerView: 1.5,
+        spaceBetween: 10,
+        lazy: true,
+        loop: true,
+
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1.5,
+            spaceBetween: 30,
+          },
+          100: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

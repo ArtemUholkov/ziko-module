@@ -1,0 +1,29 @@
+html {
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  color: white;
+  text-align: center;
+}
+.thankyou_main_section {
+  background-color: rgba(255, 255, 255, 0.281);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.thankyou_info {
+  margin-top: -100px;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.link_back {
+  text-align: center;
+  font-size: 25px;
+}
