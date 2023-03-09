@@ -33,7 +33,12 @@ footer {
   font-size: 14px;
   line-height: 16px;
 }
-
+.footer_addres {
+  font-size: 20px;
+  color: white;
+  line-height: 25px;
+  text-align: center;
+}
 @media (max-width: 920px) {
   .footer_buttons {
     margin-top: 0;
@@ -42,7 +47,7 @@ footer {
     background-color: transparent;
   } */
 }
-@media (max-width: 650px) {
+@media (max-width: 830px) {
   .footer_container {
     flex-direction: column;
     gap: 50px;
