@@ -27,10 +27,7 @@
   background-color: rgba(161, 136, 25, 0.827);
   transition: all 0.5s;
 }
-.upper {
-}
-.under {
-}
+
 .table_wrapper {
   display: flex;
   align-items: center;
