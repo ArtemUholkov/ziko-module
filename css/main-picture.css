@@ -87,6 +87,12 @@
   width: 100%;
   max-width: 300px;
   text-align: center;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.sub_title:hover {
+  color: rgb(151, 151, 151);
+  transition: all 0.5s;
 }
 .main-picture_advantage {
   font-size: 25px;
