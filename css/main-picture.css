@@ -79,8 +79,9 @@
 }
 .sub_title {
   font-size: 25px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  color: black;
+  background-color: var(--usual-decorations);
+  border: 1px solid white;
   padding: 25px 25px;
   border-radius: 15px;
   height: auto;
@@ -91,7 +92,9 @@
   transition: all 0.5s;
 }
 .sub_title:hover {
-  color: rgb(151, 151, 151);
+  background-color: rgb(177, 130, 43);
+  border-color: rgb(177, 130, 43);
+  color: black;
   transition: all 0.5s;
 }
 .main-picture_advantage {
